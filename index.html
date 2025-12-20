@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>바이브 사계 - 오피스 제주 X 위니브</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="바이브 사계 - 서비스 기획부터 배포까지 With 바이브 코딩">
+    <meta property="og:description" content="제주 사계에서 4박 5일, AI와 함께 나만의 서비스를 만들어보세요!">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/fav.png">
+
+    <!-- Google Fonts - Script Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text script-font">Vibe Sagye</span>
+                </div>
+                <nav class="header-nav">
+                    <ul class="nav-menu">
+                        <li><a href="#about" class="nav-link">캠프 소개</a></li>
+                        <li><a href="#accommodation" class="nav-link">숙박 시설</a></li>
+                        <li><a href="#curriculum" class="nav-link">커리큘럼</a></li>
+                        <li><a href="#info" class="nav-link">신청 정보</a></li>
+                    </ul>
+                </nav>
+                <a href="#apply" class="cta-button header-cta">신청하기</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section with Background Image -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <img src="img/opeace/전경_1.jpg" alt="제주 산방산" class="hero-bg-image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-partners">
+                        <a href="https://o-peace.com" target="_blank" class="partner-logo">오피스 제주</a>
+                        <span class="partner-x">X</span>
+                        <a href="https://weniv.co.kr/" target="_blank" class="partner-logo">위니브</a>
+                    </div>
+
+                    <h1 class="hero-main-title script-font">Vibe Sagye</h1>
+                    <h2 class="hero-sub-title">서비스 기획부터 배포까지<br>With 바이브 코딩</h2>
+
+                    <div class="hero-description">
+                        <div class="hero-line">
+                            제주 사계의 아름다운 자연 속에서
+                        </div>
+                        <div class="hero-line">
+                            4박 5일 동안 나만의 서비스를 완성하세요.
+                        </div>
+                    </div>
+
+                    <div class="hero-info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">📅</div>
+                            <div class="info-text">
+                                <strong>2025년 1월 5일 ~ 9일</strong>
+                                <span>4박 5일</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <div class="info-text">
+                                <strong>오피스 제주 사계점</strong>
+                                <span>제주도 서귀포시 안덕면</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accommodation Section - Moved Up & Enhanced -->
+        <section id="accommodation" class="content-section accommodation-section">
+            <div class="container">
+                <h2 class="section-title">오피스 제주 사계점</h2>
+                <p class="section-subtitle">산방산이 보이는 이국적인 워케이션 공간</p>
+
+                <!-- Image Slider Gallery -->
+                <div class="gallery-slider">
+                    <div class="gallery-tabs">
+                        <button class="gallery-tab active" data-category="exterior">전경</button>
+                        <button class="gallery-tab" data-category="lounge">라운지</button>
+                        <button class="gallery-tab" data-category="room">숙소</button>
+                    </div>
+
+                    <div class="gallery-container">
+                        <button class="gallery-arrow gallery-prev">&#10094;</button>
+
+                        <div class="gallery-slides" data-category="exterior">
+                            <div class="gallery-slide active">
+                                <img src="img/opeace/전경_1.jpg" alt="오피스 제주 전경 1">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/전경_2.jpg" alt="오피스 제주 전경 2">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/전경_3.jpg" alt="오피스 제주 전경 3">
+                            </div>
+                        </div>
+
+                        <div class="gallery-slides" data-category="lounge" style="display: none;">
+                            <div class="gallery-slide active">
+                                <img src="img/opeace/라운지_1.jpg" alt="라운지 1">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/라운지_2.jpg" alt="라운지 2">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/라운지_3.jpg" alt="라운지 3">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/라운지_4.jpg" alt="라운지 4">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/라운지_5.jpg" alt="라운지 5">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/라운지_6.jpg" alt="라운지 6">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/라운지_7.jpg" alt="라운지 7">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/세미나실.jpg" alt="라운지 8">
+                            </div>
+                        </div>
+
+                        <div class="gallery-slides" data-category="room" style="display: none;">
+                            <div class="gallery-slide active">
+                                <img src="img/opeace/숙소_room_1.jpg" alt="숙소 1">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/숙소_room_2.jpg" alt="숙소 2">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/숙소_room_3.jpg" alt="숙소 3">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/숙소_room_4.jpg" alt="숙소 4">
+                            </div>
+                            <div class="gallery-slide">
+                                <img src="img/opeace/숙소_room_5.jpg" alt="숙소 5">
+                            </div>
+                        </div>
+
+                        <button class="gallery-arrow gallery-next">&#10095;</button>
+                    </div>
+
+                    <div class="gallery-dots"></div>
+                </div>
+
+                <div class="accommodation-description">
+                    <p>
+                        <strong>붉은 사막을 닮은 건조한 색감의 건물과 삐죽 솟은 야자수.</strong><br>
+                        오피스 제주 사계점은 제주의 산방산을 배경으로 평화롭고 이국적인 모습을 자랑합니다.
+                        40석 규모의 공유 오피스와 2인 객실 20개로 구성되어 최대 40명까지 이용 가능합니다.
+                    </p>
+                </div>
+
+                <div class="accommodation-features">
+                    <div class="feature-card">
+                        <img src="img/opeace/숙소_room_1.jpg" alt="숙소">
+                        <div class="feature-info">
+                            <h3>편안한 숙소</h3>
+                            <p>2인 1실 배정, 깔끔한 침구와 개인 공간</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/opeace/라운지_1.jpg" alt="코워킹">
+                        <div class="feature-info">
+                            <h3>코워킹 스페이스</h3>
+                            <p>46개 핫데스크, 방음 부스, 회의실, 강의실 완비</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/opeace/전경_2.jpg" alt="자연">
+                        <div class="feature-info">
+                            <h3>제주의 자연</h3>
+                            <p>산방산, 용머리해안이 보이는 뷰</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img src="img/opeace/근처맛집.jpg" alt="라운지">
+                        <div class="feature-info">
+                            <h3>식사 제공</h3>
+                            <p>점심 식사 포함 - 근처 맛집 투어</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accommodation-link">
+                    <a href="https://o-peace.com/Sagye" target="_blank" class="outline-button">
+                        오피스 제주 사계점 더 알아보기 →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section light-bg">
+            <div class="container">
+                <h2 class="section-title dark-text">이런 분께 추천합니다</h2>
+                <div class="section-content">
+                    <div class="recommend-grid">
+                        <div class="recommend-card">
+                            <div class="recommend-emoji">💡</div>
+                            <p>아이디어는 있지만, 개발 방법을 몰라서 막막한 분</p>
+                        </div>
+                        <div class="recommend-card">
+                            <div class="recommend-emoji">🚀</div>
+                            <p>서비스 기획부터 배포까지 전 과정을 AI와 함께 경험해보고 싶은 분</p>
+                        </div>
+                        <div class="recommend-card">
+                            <div class="recommend-emoji">🤖</div>
+                            <p>AI 시대, 바이브 코딩을 제대로 배워보고 싶은 분</p>
+                        </div>
+                        <div class="recommend-card">
+                            <div class="recommend-emoji">🏝️</div>
+                            <p>일상에서 벗어나 집중적으로 학습하고 싶은 분</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vibe Coding Section with Examples -->
+        <section id="vibe-coding" class="content-section">
+            <div class="container">
+                <h2 class="section-title">바이브 코딩이란?</h2>
+                <p class="section-subtitle">AI와 대화하듯 서비스를 만드는 새로운 개발 방식</p>
+
+                <div class="vibe-coding-demo">
+                    <div class="demo-text">
+                        <p>
+                            바이브 코딩은 복잡한 코드를 직접 작성하는 대신,<br>
+                            <strong>AI에게 자연어로 요구사항을 전달</strong>하여<br>
+                            실제 배포 가능한 웹 서비스를 만들 수 있는 혁신적인 개발 방식입니다.
+                        </p>
+                        <div class="demo-features">
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 코딩 경험 불필요
+                            </div>
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 빠른 프로토타이핑
+                            </div>
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 견고한 확장, 유지보수 방안
+                            </div>
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 실제 배포까지
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-image">
+                        <img src="img/img-2.png" alt="바이브 코딩 작업 화면">
+                        <p class="image-caption">디자이너가 코드 없이 직접 만든 작업 화면</p>
+                    </div>
+                </div>
+
+                <!-- Student Works Showcase -->
+                <h3 class="subsection-title">수료생 결과물</h3>
+                <p class="subsection-subtitle">비전공자들이 5일 만에 만든 실제 서비스들</p>
+
+                <div class="works-grid">
+                    <div class="work-card">
+                        <img src="img/ex-10.png" alt="새소리 이상형 월드컵">
+                        <div class="work-info">
+                            <h4>새소리 이상형 월드컵</h4>
+                            <p>1기 수료생 작품</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="img/ex-1.png" alt="트리우스 북스">
+                        <div class="work-info">
+                            <h4>트리우스 북스</h4>
+                            <p>1기 수료생 작품</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="img/ex-3.png" alt="모이소 홈페이지">
+                        <div class="work-info">
+                            <h4>모이소 홈페이지</h4>
+                            <p>2기 수료생 작품</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="img/ex-11.png" alt="스텝업 클라우드">
+                        <div class="work-info">
+                            <h4>스텝업 클라우드</h4>
+                            <p>2기 수료생 작품</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrolling Examples -->
+                <div class="examples-showcase">
+                    <div class="examples-track">
+                        <div class="example-item"><img src="img/page-1.png" alt="예시 1"></div>
+                        <div class="example-item"><img src="img/page-2.png" alt="예시 2"></div>
+                        <div class="example-item"><img src="img/page-3.png" alt="예시 3"></div>
+                        <div class="example-item"><img src="img/page-4.png" alt="예시 4"></div>
+                        <div class="example-item"><img src="img/page-5.png" alt="예시 5"></div>
+                        <div class="example-item"><img src="img/page-6.png" alt="예시 6"></div>
+                        <div class="example-item"><img src="img/page-7.png" alt="예시 7"></div>
+                        <!-- Duplicate for infinite loop -->
+                        <div class="example-item"><img src="img/page-1.png" alt="예시 1"></div>
+                        <div class="example-item"><img src="img/page-2.png" alt="예시 2"></div>
+                        <div class="example-item"><img src="img/page-3.png" alt="예시 3"></div>
+                        <div class="example-item"><img src="img/page-4.png" alt="예시 4"></div>
+                        <div class="example-item"><img src="img/page-5.png" alt="예시 5"></div>
+                        <div class="example-item"><img src="img/page-6.png" alt="예시 6"></div>
+                        <div class="example-item"><img src="img/page-7.png" alt="예시 7"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section id="curriculum" class="content-section light-bg">
+            <div class="container">
+                <h2 class="section-title dark-text">5일간의 커리큘럼</h2>
+                <p class="section-subtitle dark-subtitle">서비스 기획부터 배포까지</p>
+                <p class="curriculum-notice">📌 모든 교육은 13:30 ~ 17:00에 진행되며, 일부 커리큘럼은 변동될 수 있습니다.</p>
+                <div class="section-content">
+                    <div class="curriculum-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 1</div>
+                            <div class="timeline-content">
+                                <h3>바이브 코딩 첫걸음</h3>
+                                <ul>
+                                    <li>오리엔테이션 및 자기소개</li>
+                                    <li>바이브 코딩의 개념과 시연</li>
+                                    <li>간단하게 실습해보기</li>
+                                    <li>AI 코딩 도구 비교 (최신 트랜드 모두)</li>
+                                    <li>바이브 코딩 환경 세팅</li>
+                                    <li>프롬프트 작성법과 요구사항 명세</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 2</div>
+                            <div class="timeline-content">
+                                <h3>바이브 코딩을 위한 디자인</h3>
+                                <ul>
+                                    <li>UI/UX 디자인 기초 지식</li>
+                                    <li>AI를 활용한 디자인 적용 방법</li>
+                                    <li>생성형 AI 활용 브랜드 디자인</li>
+                                    <li>디자인 툴 Figma, Figma Make 소개 및 실습</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 3</div>
+                            <div class="timeline-content">
+                                <h3>비즈니스의 이해, 프론트엔드와 실습</h3>
+                                <ul>
+                                    <li>비즈니스 모델 설계</li>
+                                    <li>수익화 전략</li>
+                                    <li>GitHub 기초 지식</li>
+                                    <li>프론트엔드 배포 방법</li>
+                                    <li>바이브 코딩 실습</li>
+                                    <li>서비스 기획 및 프로젝트 시작</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 4</div>
+                            <div class="timeline-content">
+                                <h3>백엔드 이해와 배포</h3>
+                                <ul>
+                                    <li>백엔드 기술 선택 가이드</li>
+                                    <li>URL 설계와 DB 설계</li>
+                                    <li>백엔드 기초 지식 및 실행 방법</li>
+                                    <li>백엔드 바이브 코딩 전략</li>
+                                    <li>백엔드 배포 실습 (Render)</li>
+                                    <li>프로젝트 개발 및 멘토링</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 5</div>
+                            <div class="timeline-content">
+                                <h3>프로젝트 완성과 발표</h3>
+                                <ul>
+                                    <li>결과물 발표</li>
+                                    <li>디자인 팁과 바이브 클론 코딩 팁</li>
+                                    <li>위니브 프롬프트</li>
+                                    <li>프롬프트 라이브러리 구축 전략</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section id="instructors" class="content-section">
+            <div class="container">
+                <h2 class="section-title">강사진 소개</h2>
+                <div class="instructor-grid">
+                    <div class="instructor-card">
+                        <img src="img/profile-1.png" alt="이호준 강사" class="instructor-photo">
+                        <h3>이호준 강사</h3>
+                        <p class="instructor-role">위니브 CEO</p>
+                        <p class="instructor-desc">30여 권의 IT 서적 집필, 다양한 무료 ICT 교육 플랫폼 런칭</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="img/profile-2.png" alt="차경림 강사" class="instructor-photo">
+                        <h3>차경림 강사</h3>
+                        <p class="instructor-role">위니브 CDO</p>
+                        <p class="instructor-desc">UI/UX 디자인, 캐릭터 IP, 생성형 AI 활용 디자인</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="img/profile-4.png" alt="한재현 강사" class="instructor-photo">
+                        <h3>한재현 강사</h3>
+                        <p class="instructor-role">위니브 CPO</p>
+                        <p class="instructor-desc">프론트엔드, 백엔드, 게임 개발까지 다방면 실무 경험</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="img/profile-3.png" alt="김진환 멘토" class="instructor-photo">
+                        <h3>김진환 멘토</h3>
+                        <p class="instructor-role">위니브 데이터 리드 / 고려대 겸임교수</p>
+                        <p class="instructor-desc">데이터 분석 전문가, AI 활용 바이브 코딩 서비스 배포 경험</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Included Section -->
+        <section id="included" class="content-section light-bg">
+            <div class="container">
+                <h2 class="section-title dark-text">포함 내역</h2>
+                <div class="section-content">
+                    <div class="included-grid">
+                        <div class="included-item">
+                            <span class="included-icon">🏠</span>
+                            <span class="included-text">숙박 (4박)</span>
+                        </div>
+                        <div class="included-item">
+                            <span class="included-icon">🍱</span>
+                            <span class="included-text">점심 식사</span>
+                        </div>
+                        <div class="included-item">
+                            <span class="included-icon">📚</span>
+                            <span class="included-text">교육</span>
+                        </div>
+                        <div class="included-item">
+                            <span class="included-icon">👨‍🏫</span>
+                            <span class="included-text">멘토링</span>
+                        </div>
+                        <div class="included-item">
+                            <span class="included-icon">🤝</span>
+                            <span class="included-text">네트워킹</span>
+                        </div>
+                        <div class="included-item">
+                            <span class="included-icon">🎬</span>
+                            <span class="included-text">위니브 VOD 강의 5종 제공</span>
+                        </div>
+                    </div>
+                    <div class="not-included">
+                        <p><strong>별도 준비:</strong> 개인 노트북, 개인 용품, 항공권, 조식/석식</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="info" class="content-section pricing-section">
+            <div class="container">
+                <h2 class="section-title">비용 및 신청 안내</h2>
+                <div class="section-content">
+                    <div class="pricing-cards">
+                        <div class="pricing-card featured">
+                            <div class="pricing-badge">추천</div>
+                            <h3>숙박 참가</h3>
+                            <div class="pricing-amount">
+                                <span class="price">50만원</span>
+                                <span class="price-unit">/ 4박 5일</span>
+                            </div>
+                            <p class="price-detail">숙박 + 교육 + 점심 포함</p>
+                            <ul class="pricing-features">
+                                <li>✓ 2인 1실 숙박</li>
+                                <li>✓ 점심 식사 제공</li>
+                                <li>✓ 전체 교육 과정</li>
+                                <li>✓ 멘토링 & 네트워킹</li>
+                            </ul>
+                            <p class="pricing-capacity">정원: 20명</p>
+                        </div>
+                        <div class="pricing-card">
+                            <h3>비숙박 참가</h3>
+                            <div class="pricing-amount">
+                                <span class="price">35만원</span>
+                                <span class="price-unit">/ 5일</span>
+                            </div>
+                            <p class="price-detail">교육 + 점심 포함</p>
+                            <ul class="pricing-features">
+                                <li>✓ 점심 식사 제공</li>
+                                <li>✓ 전체 교육 과정</li>
+                                <li>✓ 멘토링 & 네트워킹</li>
+                                <li>○ 숙박 별도</li>
+                            </ul>
+                            <p class="pricing-capacity">정원: 5명</p>
+                        </div>
+                    </div>
+
+                    <div class="info-table-wrapper">
+                        <table class="info-table">
+                            <tbody>
+                                <tr>
+                                    <td class="info-label">일정</td>
+                                    <td class="info-value">2025년 1월 5일(일) ~ 1월 9일(목)</td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">장소</td>
+                                    <td class="info-value">오피스 제주 사계점 (제주도 서귀포시 안덕면 사계리)</td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">모집 인원</td>
+                                    <td class="info-value">최대 25명 (숙박 20명, 비숙박 5명)</td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">신청 기간</td>
+                                    <td class="info-value">2024년 12월 24일(화) ~ 12월 30일(월) <strong>단 일주일!</strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">마감 안내</td>
+                                    <td class="info-value">입금 기준 <strong>선착순 마감</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apply Section -->
+        <section id="apply" class="content-section apply-section">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80" alt="제주 해변" class="hero-bg-image">
+                <div class="hero-overlay light-overlay"></div>
+            </div>
+            <div class="container">
+                <h2 class="section-title">신청하기</h2>
+                <div class="section-content">
+                    <p class="apply-description">
+                        아래 버튼을 클릭하여 Google Form으로 신청해주세요.<br>
+                        신청 후 안내된 계좌로 입금하시면 등록이 완료됩니다.
+                    </p>
+                    <a href="#" class="cta-button apply-cta" id="apply-button">
+                        신청 폼 작성하기
+                    </a>
+                    <p class="apply-note">
+                        * 문의사항은 <a href="mailto:paul-lab@naver.com">paul-lab@naver.com</a>으로 연락해주세요.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="content-section light-bg">
+            <div class="container">
+                <h2 class="section-title dark-text">자주 묻는 질문</h2>
+                <div class="section-content">
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>Q. 코딩을 전혀 몰라도 참여할 수 있나요?</h3>
+                            <p>네, 물론입니다! 바이브 코딩은 코딩 경험이 없어도 AI와 자연어로 대화하며 서비스를 만들 수 있는 방식입니다. 비전공자, 비개발자도 환영합니다.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Q. 숙박은 어떻게 배정되나요?</h3>
+                            <p>숙박은 2인 1실로 배정됩니다. 동행자가 있으시면 신청 시 함께 배정해드리며, 개인 참가자는 동성끼리 배정됩니다.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Q. 항공권과 식사는 포함인가요?</h3>
+                            <p>항공권은 별도이지만 지금 제주항공에서 구매하시면 매우 쌉니다. 점심 식사는 포함되어 있으며, 조식과 석식은 포함되어 있지 않습니다. 다만 아침에는 식빵이 준비되어 있으며, 근처에 식당과 카페가 있습니다.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Q. 노트북은 어떤 것을 가져가야 하나요?</h3>
+                            <p>개인 노트북을 지참해주세요. Windows, Mac 모두 가능하며, 기본적인 웹 브라우저와 코드 에디터 설치가 가능하면 됩니다. 사양이 좋지 않아도 됩니다. 여분에 노트북이 있긴 하나, 문제가 생긴 경우에만 빌려드릴 예정입니다.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Q. 환불 정책은 어떻게 되나요?</h3>
+                            <p>1월 2일 자정까지 50% 환불이 가능합니다. 이후에는 환불이 어렵습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-partners">
+                    <div class="footer-partner">
+                        <img src="img/opeace/오피스로고.png" alt="오피스 제주" class="footer-logo">
+                        <p>숙박 및 워케이션 공간</p>
+                        <a href="https://o-peace.com" target="_blank">o-peace.com</a>
+                    </div>
+                    <div class="footer-partner">
+                        <img src="img/weniv-logo.svg" alt="위니브" class="footer-logo">
+                        <p>ICT 교육 콘텐츠</p>
+                        <a href="https://weniv.co.kr/" target="_blank">weniv.co.kr</a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>(주)위니브 | 대표: 이호준 | 사업자 번호: 546-86-01737</p>
+                    <p>주소: 제주 제주시 구산로 58 2층</p>
+                </div>
+                <div class="footer-copyright">© 2025 WENIV & O-PEACE. All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Application Modal -->
+    <div id="apply-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-icon">📅</div>
+            <h3>신청 기간 안내</h3>
+            <p>신청은 <strong>12월 24일(화)</strong>부터 가능합니다.</p>
+            <p class="modal-sub">12월 24일 ~ 30일, 단 일주일간 신청 가능!</p>
+            <button class="modal-button">확인</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
