@@ -1279,6 +1279,13 @@ body {
     object-fit: contain;
 }
 
+.footer-logo-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .footer-info {
     color: var(--text-light);
     font-size: 0.85rem;
@@ -1338,6 +1345,20 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        padding: 4rem 0 3rem;
+    }
+
+    .hero-bg-image {
+        object-position: 70% center;
+        object-fit: cover;
+    }
+
+    .hero-background {
+        background-color: #2a3a4a;
+    }
+
     .hero-main-title {
         font-size: 2.5rem;
     }
@@ -1351,14 +1372,7 @@ body {
     }
 
     .hero-info-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .info-card {
-        width: 100%;
-        max-width: 300px;
+        display: none;
     }
 
     .section-title {
