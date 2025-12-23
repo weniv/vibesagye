@@ -1896,6 +1896,10 @@ a.logo {
         font-size: 1.1rem;
     }
 
+    .vibe-qa-section {
+        margin-bottom: 2rem;
+    }
+
     .vibe-coding-demo {
         grid-template-columns: 1fr;
         text-align: center;
