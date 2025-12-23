@@ -148,6 +148,54 @@ if (bottomCta && applySection) {
 console.log('%c바이브 사계에 오신 것을 환영합니다!', 'color: #FF6B35; font-size: 20px; font-weight: bold;');
 console.log('%c제주 사계에서 4박 5일, AI와 함께 나만의 서비스를 만들어보세요.', 'color: #2E6FF2; font-size: 14px;');
 
+// Typing Animation
+function initTypingAnimation() {
+    const typingText = document.getElementById('typing-text');
+    if (!typingText) return;
+
+    const phrases = [
+        '타이머 만들어 줘',
+        '회사 소개 랜딩페이지 만들어 줘',
+        '뱀파이어 서바이벌 게임 만들어 줘',
+        '포트폴리오 사이트 만들어 줘',
+        '할 일 관리 앱 만들어 줘'
+    ];
+
+    let currentPhraseIndex = 0;
+    let currentCharIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+
+    function type() {
+        const currentPhrase = phrases[currentPhraseIndex];
+
+        if (isDeleting) {
+            typingText.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+            currentCharIndex--;
+            typingSpeed = 50;
+        } else {
+            typingText.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+            currentCharIndex++;
+            typingSpeed = 100;
+        }
+
+        if (!isDeleting && currentCharIndex === currentPhrase.length) {
+            typingSpeed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && currentCharIndex === 0) {
+            isDeleting = false;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+            typingSpeed = 500;
+        }
+
+        setTimeout(type, typingSpeed);
+    }
+
+    setTimeout(type, 1000);
+}
+
+document.addEventListener('DOMContentLoaded', initTypingAnimation);
+
 // Gallery Slider
 (function() {
     const gallerySlider = document.querySelector('.gallery-slider');

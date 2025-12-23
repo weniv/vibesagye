@@ -25,18 +25,19 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
+                <a href="/" class="logo" onclick="location.reload(); return false;">
                     <span class="logo-text script-font">Vibe Sagye</span>
-                </div>
+                </a>
                 <nav class="header-nav">
                     <ul class="nav-menu">
-                        <li><a href="#about" class="nav-link">캠프 소개</a></li>
-                        <li><a href="#accommodation" class="nav-link">숙박 시설</a></li>
+                        <li><a href="#vibe-coding" class="nav-link">캠프 소개</a></li>
                         <li><a href="#curriculum" class="nav-link">커리큘럼</a></li>
+                        <li><a href="#accommodation" class="nav-link">숙박 시설</a></li>
                         <li><a href="#info" class="nav-link">신청 정보</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
                     </ul>
                 </nav>
-                <a href="#apply" class="cta-button header-cta">신청하기</a>
+                <a href="https://forms.gle/1VvtKpSGSCQScEzJ7" target="_blank" class="cta-button header-cta">신청하기</a>
             </div>
         </div>
     </header>
@@ -71,12 +72,19 @@
 
                     <div class="hero-info-cards">
                         <div class="info-card">
+                            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                            </svg>
                             <div class="info-text">
                                 <strong>2026년 1월 5일(월) ~ 9일(금)</strong>
                                 <span>4박 5일</span>
                             </div>
                         </div>
                         <div class="info-card">
+                            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
                             <div class="info-text">
                                 <strong>오피스 제주 사계점</strong>
                                 <span>제주 서귀포시 안덕면 향교로 214</span>
@@ -87,7 +95,340 @@
             </div>
         </section>
 
-        <!-- Accommodation Section - Moved Up & Enhanced -->
+        <!-- 1. Vibe Coding Section - 바이브 코딩이란? -->
+        <section id="vibe-coding" class="content-section">
+            <div class="container">
+                <!-- Q&A Introduction -->
+                <div class="vibe-qa-section">
+                    <h2 class="qa-question">Q. 비전공자, 비개발자도<br>코딩 없이 서비스 개발을 할 수 있나요?</h2>
+                    <p class="qa-answer">A. 네, AI를 활용하면 가능합니다!</p>
+                    <div class="qa-description">
+                        <p>바이브 코딩은 복잡한 코드를 직접 쓰는 대신, AI와 대화하듯 아이디어와 요구사항을 입력해 실제 배포 가능한 웹/앱 서비스를 만들 수 있는 개발 방식이에요.</p>
+                        <p>예를 들어, AI에게 "타이머 만들어 줘"라고 말하면 AI가 단 1분 만에 타이머를 뚝딱 만들어 주죠.</p>
+                        <div class="typing-animation-container">
+                            <span class="typing-prefix">AI에게 말해보세요<br>"</span>
+                            <span class="typing-text" id="typing-text"></span>
+                            <span class="typing-cursor">|</span>
+                            <span class="typing-suffix">"</span>
+                        </div>
+                        <p class="qa-highlight">이것이 바로 '바이브 코딩'입니다.</p>
+                    </div>
+                </div>
+
+                <!-- Demo Section -->
+                <div class="vibe-coding-demo">
+                    <div class="demo-text">
+                        <div class="demo-features">
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 코딩 경험 불필요
+                            </div>
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 빠른 프로토타이핑
+                            </div>
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 견고한 확장, 유지보수 방안
+                            </div>
+                            <div class="demo-feature">
+                                <span class="check">✓</span> 실제 배포까지
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-image">
+                        <img src="img/img-2.png" alt="바이브 코딩 작업 화면">
+                        <p class="image-caption">디자이너의 바이브 코딩 작업 화면</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Section - 이런 분께 추천합니다 -->
+        <section id="about" class="content-section light-bg">
+            <div class="container">
+                <h2 class="section-title dark-text">이런 분께 추천합니다</h2>
+                <div class="section-content">
+                    <div class="recommend-grid">
+                        <div class="recommend-card">
+                            <svg class="recommend-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                            </svg>
+                            <span class="recommend-role">기획자</span>
+                            <p class="recommend-quote">"아이디어는 넘치는데, 외주 견적서에 막히셨나요?"</p>
+                            <p>5천만 원 견적서에 포기했던 아이디어, 직접 프로토타입을 만들어 시장의 반응을 확인하세요.</p>
+                        </div>
+                        <div class="recommend-card">
+                            <svg class="recommend-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+                            </svg>
+                            <span class="recommend-role">디자이너</span>
+                            <p class="recommend-quote">"내 디자인을 직접 구현하고 싶으신가요?"</p>
+                            <p>디자인 핸드오프(Handoff) 없는 세상. 피그마 시안을 넘어 실제 작동하는 결과물을 직접 만드세요.</p>
+                        </div>
+                        <div class="recommend-card">
+                            <svg class="recommend-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+                            </svg>
+                            <span class="recommend-role">마케터 · 직장인</span>
+                            <p class="recommend-quote">"반복 작업에 시간을 뺏기고 계신가요?"</p>
+                            <p>반복되는 엑셀 노가다는 이제 그만. 자연어로 명령하는 나만의 자동화 툴로 업무의 정점에 서세요.</p>
+                        </div>
+                        <div class="recommend-card">
+                            <svg class="recommend-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                            </svg>
+                            <span class="recommend-role">창업 희망자</span>
+                            <p class="recommend-quote">"개발자를 못 구해 아이디어가 묻히고 있나요?"</p>
+                            <p>개발자 구인에 쏟는 에너지를 '아이디어 검증'에 쓰세요. 5일 만에 MVP를 완성하고 바로 시작하세요.</p>
+                        </div>
+                        <div class="recommend-card">
+                            <svg class="recommend-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg>
+                            <span class="recommend-role">비개발 직군</span>
+                            <p class="recommend-quote">"AI 시대, 코딩 없이 도태될까 불안하신가요?"</p>
+                            <p>막연한 AI 시대의 불안감, '직접 만드는 경험'을 통해 독보적인 AI 활용 능력을 갖춘 인재가 되세요.</p>
+                        </div>
+                        <div class="recommend-card">
+                            <svg class="recommend-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                            </svg>
+                            <span class="recommend-role">워케이션 희망자</span>
+                            <p class="recommend-quote">"일상을 벗어나 성장에만 몰입하고 싶으신가요?"</p>
+                            <p>일상의 환기, 제주의 영감. 휴식과 몰입이 공존하는 사계에서 커리어의 터닝포인트를 만드세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Student Works Section - 수료생 결과물 -->
+        <section id="student-works" class="content-section">
+            <div class="container">
+                <h2 class="section-title dark-text">수료생 결과물을 확인하세요!</h2>
+                <p class="section-subtitle dark-subtitle">비개발자가 단 5일 만에 직접 만든 실제 서비스입니다.</p>
+
+                <div class="works-grid">
+                    <div class="work-card">
+                        <img src="img/ex-10.png" alt="새소리 이상형 월드컵">
+                        <div class="work-info">
+                            <h4>새소리 이상형 월드컵</h4>
+                            <p>1기 수료생 작품</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="img/ex-1.png" alt="트리우스 북스">
+                        <div class="work-info">
+                            <h4>트리우스 북스</h4>
+                            <p>1기 수료생 작품</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="img/ex-3.png" alt="모이소 홈페이지">
+                        <div class="work-info">
+                            <h4>모이소 홈페이지</h4>
+                            <p>2기 수료생 작품</p>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="img/ex-11.png" alt="스텝업 클라우드">
+                        <div class="work-info">
+                            <h4>스텝업 클라우드</h4>
+                            <p>2기 수료생 작품</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrolling Examples -->
+                <div class="examples-header">
+                    <p class="section-subtitle dark-subtitle">아이디어만 가져오세요</p>
+                    <h2 class="section-title dark-text">5일 뒤 실제 서비스가 됩니다</h2>
+                </div>
+                <div class="examples-section">
+                    <div class="examples-container">
+                        <div class="examples-track">
+                            <div class="example-card example-card-1">
+                                <div class="example-image"></div>
+                                <div class="example-title">음악 플레이 타이머</div>
+                            </div>
+                            <div class="example-card example-card-2">
+                                <div class="example-image"></div>
+                                <div class="example-title">AI 도구 필터링 서비스</div>
+                            </div>
+                            <div class="example-card example-card-3">
+                                <div class="example-image"></div>
+                                <div class="example-title">뱀파이어 서바이벌 게임</div>
+                            </div>
+                            <div class="example-card example-card-4">
+                                <div class="example-image"></div>
+                                <div class="example-title">마크다운 프레젠테이션 서비스</div>
+                            </div>
+                            <div class="example-card example-card-5">
+                                <div class="example-image"></div>
+                                <div class="example-title">회사 소개 랜딩 페이지</div>
+                            </div>
+                            <div class="example-card example-card-6">
+                                <div class="example-image"></div>
+                                <div class="example-title">포트폴리오 사이트</div>
+                            </div>
+                            <div class="example-card example-card-7">
+                                <div class="example-image"></div>
+                                <div class="example-title">학습 대시보드</div>
+                            </div>
+                            <!-- Duplicate cards for infinite loop -->
+                            <div class="example-card example-card-1">
+                                <div class="example-image"></div>
+                                <div class="example-title">음악 플레이 타이머</div>
+                            </div>
+                            <div class="example-card example-card-2">
+                                <div class="example-image"></div>
+                                <div class="example-title">AI 도구 필터링 서비스</div>
+                            </div>
+                            <div class="example-card example-card-3">
+                                <div class="example-image"></div>
+                                <div class="example-title">뱀파이어 서바이벌 게임</div>
+                            </div>
+                            <div class="example-card example-card-4">
+                                <div class="example-image"></div>
+                                <div class="example-title">마크다운 프레젠테이션 서비스</div>
+                            </div>
+                            <div class="example-card example-card-5">
+                                <div class="example-image"></div>
+                                <div class="example-title">회사 소개 랜딩 페이지</div>
+                            </div>
+                            <div class="example-card example-card-6">
+                                <div class="example-image"></div>
+                                <div class="example-title">포트폴리오 사이트</div>
+                            </div>
+                            <div class="example-card example-card-7">
+                                <div class="example-image"></div>
+                                <div class="example-title">학습 대시보드</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4-1. Testimonial Section - 수강생 후기 -->
+        <section id="testimonials" class="content-section testimonial-section-white">
+            <div class="container">
+                <p class="section-subtitle dark-subtitle">"정말 저도 할 수 있을까요?"</p>
+                <h2 class="section-title dark-text">먼저 경험한 수강생들이 직접 답해드립니다.</h2>
+                <div class="section-content">
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card-white">
+                            <div class="testimonial-header-white">개발자가 없어서 중단되었던 사업에 희망이 생겼어요.</div>
+                            <p>개발/코딩을 1도 모르던 제가, 이미 만들어진 프로그램들을 분석하고 유지/보수하는 영역은 바로 가능하겠다는 자신감을 얻었습니다.</p>
+                            <div class="testimonial-author-white">(바이브 1기) 이*원</div>
+                        </div>
+                        <div class="testimonial-card-white">
+                            <div class="testimonial-header-white">기획자도 개발의 재미를 느끼고 새로운 가능성을 발견했어요.</div>
+                            <p>경영진이나 기획팀에서 검증하고 싶어 바이브 코딩을 학습하게 되었는데, 새로운 가능성에 더 빨리 접근하게 된 것 같습니다.</p>
+                            <div class="testimonial-author-white">(바이브 1기) 강*재</div>
+                        </div>
+                        <div class="testimonial-card-white">
+                            <div class="testimonial-header-white">AI 코딩이 가져올 새로운 시장의 가능성을 보았습니다.</div>
+                            <p>AI를 통한 코딩의 현주소를 피부로 느낀 시간이었고, 바이브 코딩을 통한 새로운 시장 창출도 지켜봐야겠습니다.</p>
+                            <div class="testimonial-author-white">(바이브 1기) 도*</div>
+                        </div>
+                        <div class="testimonial-card-white">
+                            <div class="testimonial-header-white">온라인 코딩 수업에 대한 불신이 확신으로 바뀌었어요.</div>
+                            <p>비전공자 입장에서 설계했다는 게 느껴졌고, 막히는 부분이 있을 때 끝까지 함께 고민하고 해결해주신 덕분에 '자신감'이 생겼습니다.</p>
+                            <div class="testimonial-author-white">(바이브 1기) 최*옥</div>
+                        </div>
+                        <div class="testimonial-card-white">
+                            <div class="testimonial-header-white">가성비 최고! 바이브 코딩이 미래라는 확신을 얻었습니다.</div>
+                            <p>구현하고 싶은 서비스가 있는데 노코드로 할지 바이브 코딩으로 할지 고민하다가, 바이브 코딩이 미래라는 생각이 확고해졌습니다.</p>
+                            <div class="testimonial-author-white">(바이브 1기) 최*진</div>
+                        </div>
+                        <div class="testimonial-card-white">
+                            <div class="testimonial-header-white">코딩을 몰라도 뭔가를 만들 수 있다는 게 신기했어요.</div>
+                            <p>코딩을 몰라도 자연어로 만드는 방법을 배운 것만으로도 큰 수확입니다. 강의 중에 막히면 바로 답해주셔서 감사했습니다.</p>
+                            <div class="testimonial-author-white">(바이브 2기) 권*호</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Curriculum Section - 5일간의 커리큘럼 -->
+        <section id="curriculum" class="content-section">
+            <div class="container">
+                <h2 class="section-title dark-text">5일간의 커리큘럼</h2>
+                <p class="section-subtitle dark-subtitle">서비스 기획부터 배포까지 - 제주 런케이션!</p>
+                <div class="section-content">
+                    <div class="curriculum-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 1</div>
+                            <div class="timeline-content">
+                                <h3>바이브 코딩 첫걸음</h3>
+                                <ul>
+                                    <li>오리엔테이션 및 자기소개</li>
+                                    <li>바이브 코딩의 개념과 시연</li>
+                                    <li>간단하게 실습해보기</li>
+                                    <li>AI 코딩 도구 비교 (최신 트랜드 모두)</li>
+                                    <li>바이브 코딩 환경 세팅</li>
+                                    <li>프롬프트 작성법과 요구사항 명세</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 2</div>
+                            <div class="timeline-content">
+                                <h3>바이브 코딩을 위한 디자인</h3>
+                                <ul>
+                                    <li>UI/UX 디자인 기초 지식</li>
+                                    <li>AI를 활용한 디자인 적용 방법</li>
+                                    <li>생성형 AI 활용 브랜드 디자인</li>
+                                    <li>디자인 툴 Figma, Figma Make 소개 및 실습</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 3</div>
+                            <div class="timeline-content">
+                                <h3>비즈니스의 이해, 프론트엔드와 실습</h3>
+                                <ul>
+                                    <li>비즈니스 모델 설계</li>
+                                    <li>수익화 전략</li>
+                                    <li>GitHub 기초 지식</li>
+                                    <li>프론트엔드 배포 방법</li>
+                                    <li>바이브 코딩 실습</li>
+                                    <li>서비스 기획 및 프로젝트 시작</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 4</div>
+                            <div class="timeline-content">
+                                <h3>백엔드 이해와 배포</h3>
+                                <ul>
+                                    <li>백엔드 기술 선택 가이드</li>
+                                    <li>URL 설계와 DB 설계</li>
+                                    <li>백엔드 기초 지식 및 실행 방법</li>
+                                    <li>백엔드 바이브 코딩 전략</li>
+                                    <li>백엔드 배포 실습</li>
+                                    <li>프로젝트 개발 및 멘토링</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-day">Day 5</div>
+                            <div class="timeline-content">
+                                <h3>프로젝트 완성과 발표</h3>
+                                <ul>
+                                    <li>결과물 발표 - 위니브 상장</li>
+                                    <li>디자인 팁과 바이브 클론 코딩 팁</li>
+                                    <li>위니브 프롬프트</li>
+                                    <li>프롬프트 라이브러리 구축 전략</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Accommodation Section - 오피스 제주 사계점 -->
         <section id="accommodation" class="content-section accommodation-section">
             <div class="container">
                 <h2 class="section-title">오피스 제주 사계점</h2>
@@ -213,7 +554,212 @@
             </div>
         </section>
 
-        <!-- Weniv Introduction Section -->
+        <!-- 7. Pricing Section - 비용 및 신청 안내 -->
+        <section id="info" class="content-section pricing-section">
+            <div class="container">
+                <h2 class="section-title">비용 및 신청 안내</h2>
+                <p class="section-subtitle">참가 유형 선택</p>
+                <div class="section-content">
+                    <div class="pricing-cards">
+                        <div class="pricing-card featured">
+                            <div class="pricing-badge">추천</div>
+                            <h3>숙박 참가</h3>
+                            <div class="pricing-amount">
+                                <span class="price">55만원</span>
+                                <span class="price-unit">/ 4박 5일</span>
+                            </div>
+                            <p class="price-detail">숙박 + 교육 + 점심 포함</p>
+                            <ul class="pricing-features">
+                                <li>✓ 2인 1실 숙박</li>
+                                <li>✓ 점심 식사 제공</li>
+                                <li>✓ 전체 교육 과정</li>
+                                <li>✓ 멘토링 & 네트워킹</li>
+                            </ul>
+                            <p class="pricing-capacity">정원: 20명</p>
+                        </div>
+                        <div class="pricing-card">
+                            <h3>비숙박 참가</h3>
+                            <div class="pricing-amount">
+                                <span class="price">35만원</span>
+                                <span class="price-unit">/ 5일</span>
+                            </div>
+                            <p class="price-detail">교육 + 점심 포함</p>
+                            <ul class="pricing-features">
+                                <li>✓ 점심 식사 제공</li>
+                                <li>✓ 전체 교육 과정</li>
+                                <li>✓ 멘토링 & 네트워킹</li>
+                                <li>○ 숙박 별도</li>
+                            </ul>
+                            <p class="pricing-capacity">정원: 5명</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7-2. Program Schedule Section - 프로그램 안내 -->
+        <section id="program" class="content-section light-bg">
+            <div class="container">
+                <h2 class="section-title dark-text">프로그램 안내</h2>
+                <p class="section-subtitle dark-subtitle">하루 일정</p>
+                <div class="section-content">
+                    <div class="daily-schedule">
+                        <div class="schedule-item highlight">
+                            <div class="schedule-time">10:00 - 12:00</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">개별 프로젝트 고도화</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">12:00 - 13:00</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">점심 식사</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">13:00 - 13:30</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">쉬는 시간</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item highlight">
+                            <div class="schedule-time">13:30 - 17:00</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">강의 시간</div>
+                                <a href="#curriculum" class="schedule-link">커리큘럼 확인</a>
+                            </div>
+                        </div>
+                        <div class="schedule-item highlight">
+                            <div class="schedule-time">17:00 - 18:00</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">개인 프로젝트 & 멘토링</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">18:00 ~</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">자유 시간</div>
+                                <div class="schedule-desc">개인 프로젝트 or 휴식</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7-3. Schedule Info Section - 일정 안내 -->
+        <section id="schedule" class="content-section">
+            <div class="container">
+                <h2 class="section-title dark-text">일정 안내</h2>
+                <div class="section-content">
+                    <div class="info-table-wrapper">
+                        <table class="info-table">
+                            <tbody>
+                                <tr>
+                                    <td class="info-label">일정</td>
+                                    <td class="info-value">2026년 1월 5일(월) ~ 1월 9일(금)</td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">장소</td>
+                                    <td class="info-value">오피스 제주 사계점 (제주 서귀포시 안덕면 향교로 214)</td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">모집 인원</td>
+                                    <td class="info-value">최대 25명 (숙박 20명, 비숙박 5명)</td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">신청 기간</td>
+                                    <td class="info-value">2025년 12월 24일(수) ~ 12월 30일(화) <strong>단 일주일!</strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="info-label">마감 안내</td>
+                                    <td class="info-value">입금 기준 <strong>선착순 마감</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. What's Included Section - 제공 혜택 -->
+        <section id="included" class="content-section included-section">
+            <div class="container">
+                <h2 class="section-title">제공 혜택</h2>
+                <div class="section-content">
+                    <div class="included-grid">
+                        <div class="included-item">
+                            <img src="img/included/1.jpg" alt="숙박">
+                            <div class="included-info">
+                                <h3>숙박 (4박)</h3>
+                                <p>오피스 제주 사계점 숙소 제공</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <img src="img/included/2.jpg" alt="점심 식사">
+                            <div class="included-info">
+                                <h3>점심 식사</h3>
+                                <p>매일 점심 식사 제공</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <img src="img/included/3.png" alt="교육">
+                            <div class="included-info">
+                                <h3>바이브 코딩 이론 + 실습 교육</h3>
+                                <p>바이브 코딩 실습 교육</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <img src="img/included/4.png" alt="멘토링">
+                            <div class="included-info">
+                                <h3>멘토링</h3>
+                                <p>1:1 프로젝트 멘토링</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <img src="img/included/5.png" alt="네트워킹">
+                            <div class="included-info">
+                                <h3>네트워킹</h3>
+                                <p>참가자 교류 및 네트워킹</p>
+                            </div>
+                        </div>
+                        <div class="included-item">
+                            <img src="img/included/6.png" alt="VOD 강의">
+                            <div class="included-info">
+                                <h3>VOD 강의 5종</h3>
+                                <p>위니브 온라인 강의 제공</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="not-included">
+                        <p><strong>별도 준비 사항</strong> 개인 노트북, 개인 용품, 항공권, 조식/석식</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Instructors Section - 강사진 소개 -->
+        <section id="instructors" class="content-section light-bg">
+            <div class="container">
+                <h2 class="section-title dark-text">강사진 소개</h2>
+                <div class="instructor-grid instructor-grid-2">
+                    <div class="instructor-card">
+                        <img src="img/profile-1.png" alt="이호준 강사" class="instructor-photo">
+                        <h3>이호준 강사</h3>
+                        <p class="instructor-role">위니브 대표</p>
+                        <p class="instructor-desc">30여권의 IT 서적을 집필했고, ICT 교육을 위한 위니북스 플랫폼 등 다양한 무료 ICT 교육 플랫폼을 런칭한 경험을 가지고 있습니다. 최근에는 30일 Claude Code 바이브 코딩 도전기를 집필하고 있어요.</p>
+                    </div>
+                    <div class="instructor-card">
+                        <img src="img/profile-2.png" alt="차경림 강사" class="instructor-photo">
+                        <h3>차경림 강사</h3>
+                        <p class="instructor-role">위니브 디자이너</p>
+                        <p class="instructor-desc">UI/UX 디자인, 캐릭터 IP, 교육 콘텐츠 제작 등 다양한 실무를 위니브에서 경험해왔습니다. 현재는 디자인 총괄 이사로서 디자인 방향성과 브랜드 구축을 담당하고 있으며, 최근에는 생성형 AI와 Claude Code 등 AI 기술을 활용한 디자인 실험을 지속하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Weniv Introduction Section - 위니브 -->
         <section id="weniv" class="content-section weniv-section">
             <div class="container">
                 <h2 class="section-title dark-text">위니브</h2>
@@ -252,17 +798,19 @@
                         </div>
                     </div>
                     <div class="weniv-showcase-item wenibooks-item">
-                        <h3>대표 서비스 - 위니북스</h3>
+                        <div class="wenibooks-header">
+                            <h3>대표 서비스 - 위니북스</h3>
+                            <a href="https://www.books.weniv.co.kr/" target="_blank" class="wenibooks-cta">
+                                <span>바로가기</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                </svg>
+                            </a>
+                        </div>
                         <p class="showcase-desc">IT 및 프로그래밍 전자책, 전자책 내에서 실습하며 학습할 수 있는 플랫폼</p>
                         <div class="weniv-image-wrapper">
                             <img src="img/weniv_wenivooks.png" alt="위니북스">
                         </div>
-                        <a href="https://www.books.weniv.co.kr/" target="_blank" class="wenibooks-cta">
-                            <span>위니북스 바로가기</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                            </svg>
-                        </a>
                     </div>
                 </div>
 
@@ -274,345 +822,7 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="content-section light-bg">
-            <div class="container">
-                <h2 class="section-title dark-text">이런 분께 추천합니다</h2>
-                <div class="section-content">
-                    <div class="recommend-grid">
-                        <div class="recommend-card">
-                            <div class="recommend-emoji">💡</div>
-                            <p>아이디어는 있지만, 개발 방법을 몰라서 막막한 분</p>
-                        </div>
-                        <div class="recommend-card">
-                            <div class="recommend-emoji">🚀</div>
-                            <p>서비스 기획부터 배포까지 전 과정을 AI와 함께 경험해보고 싶은 분</p>
-                        </div>
-                        <div class="recommend-card">
-                            <div class="recommend-emoji">🤖</div>
-                            <p>AI 시대, 바이브 코딩을 제대로 배워보고 싶은 분</p>
-                        </div>
-                        <div class="recommend-card">
-                            <div class="recommend-emoji">🏝️</div>
-                            <p>일상에서 벗어나 집중적으로 학습하고 싶은 분</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Vibe Coding Section with Examples -->
-        <section id="vibe-coding" class="content-section">
-            <div class="container">
-                <h2 class="section-title">바이브 코딩이란?</h2>
-                <p class="section-subtitle">AI와 대화하듯 서비스를 만드는 새로운 개발 방식</p>
-
-                <div class="vibe-coding-demo">
-                    <div class="demo-text">
-                        <p>
-                            바이브 코딩은 복잡한 코드를 직접 작성하는 대신,<br>
-                            <strong>AI에게 자연어로 요구사항을 전달</strong>하여<br>
-                            실제 배포 가능한 웹 서비스를 만들 수 있는 혁신적인 개발 방식입니다.
-                        </p>
-                        <div class="demo-features">
-                            <div class="demo-feature">
-                                <span class="check">✓</span> 코딩 경험 불필요
-                            </div>
-                            <div class="demo-feature">
-                                <span class="check">✓</span> 빠른 프로토타이핑
-                            </div>
-                            <div class="demo-feature">
-                                <span class="check">✓</span> 견고한 확장, 유지보수 방안
-                            </div>
-                            <div class="demo-feature">
-                                <span class="check">✓</span> 실제 배포까지
-                            </div>
-                        </div>
-                    </div>
-                    <div class="demo-image">
-                        <img src="img/img-2.png" alt="바이브 코딩 작업 화면">
-                        <p class="image-caption">디자이너가 코드 없이 직접 만든 작업 화면</p>
-                    </div>
-                </div>
-
-                <!-- Student Works Showcase -->
-                <h3 class="subsection-title">수료생 결과물</h3>
-                <p class="subsection-subtitle">비전공자들이 5일 만에 만든 실제 서비스들</p>
-
-                <div class="works-grid">
-                    <div class="work-card">
-                        <img src="img/ex-10.png" alt="새소리 이상형 월드컵">
-                        <div class="work-info">
-                            <h4>새소리 이상형 월드컵</h4>
-                            <p>1기 수료생 작품</p>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <img src="img/ex-1.png" alt="트리우스 북스">
-                        <div class="work-info">
-                            <h4>트리우스 북스</h4>
-                            <p>1기 수료생 작품</p>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <img src="img/ex-3.png" alt="모이소 홈페이지">
-                        <div class="work-info">
-                            <h4>모이소 홈페이지</h4>
-                            <p>2기 수료생 작품</p>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <img src="img/ex-11.png" alt="스텝업 클라우드">
-                        <div class="work-info">
-                            <h4>스텝업 클라우드</h4>
-                            <p>2기 수료생 작품</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Scrolling Examples -->
-                <div class="examples-showcase">
-                    <div class="examples-track">
-                        <div class="example-item"><img src="img/page-1.png" alt="예시 1"></div>
-                        <div class="example-item"><img src="img/page-2.png" alt="예시 2"></div>
-                        <div class="example-item"><img src="img/page-3.png" alt="예시 3"></div>
-                        <div class="example-item"><img src="img/page-4.png" alt="예시 4"></div>
-                        <div class="example-item"><img src="img/page-5.png" alt="예시 5"></div>
-                        <div class="example-item"><img src="img/page-6.png" alt="예시 6"></div>
-                        <div class="example-item"><img src="img/page-7.png" alt="예시 7"></div>
-                        <!-- Duplicate for infinite loop -->
-                        <div class="example-item"><img src="img/page-1.png" alt="예시 1"></div>
-                        <div class="example-item"><img src="img/page-2.png" alt="예시 2"></div>
-                        <div class="example-item"><img src="img/page-3.png" alt="예시 3"></div>
-                        <div class="example-item"><img src="img/page-4.png" alt="예시 4"></div>
-                        <div class="example-item"><img src="img/page-5.png" alt="예시 5"></div>
-                        <div class="example-item"><img src="img/page-6.png" alt="예시 6"></div>
-                        <div class="example-item"><img src="img/page-7.png" alt="예시 7"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Curriculum Section -->
-        <section id="curriculum" class="content-section light-bg">
-            <div class="container">
-                <h2 class="section-title dark-text">5일간의 커리큘럼</h2>
-                <p class="section-subtitle dark-subtitle">서비스 기획부터 배포까지 - 제주 런케이션!</p>
-                <p class="curriculum-notice">📌 모든 교육은 13:30 ~ 17:00에 진행되며, 일부 커리큘럼은 변동될 수 있습니다.</p>
-                <div class="section-content">
-                    <div class="curriculum-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-day">Day 1</div>
-                            <div class="timeline-content">
-                                <h3>바이브 코딩 첫걸음</h3>
-                                <ul>
-                                    <li>오리엔테이션 및 자기소개</li>
-                                    <li>바이브 코딩의 개념과 시연</li>
-                                    <li>간단하게 실습해보기</li>
-                                    <li>AI 코딩 도구 비교 (최신 트랜드 모두)</li>
-                                    <li>바이브 코딩 환경 세팅</li>
-                                    <li>프롬프트 작성법과 요구사항 명세</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-day">Day 2</div>
-                            <div class="timeline-content">
-                                <h3>바이브 코딩을 위한 디자인</h3>
-                                <ul>
-                                    <li>UI/UX 디자인 기초 지식</li>
-                                    <li>AI를 활용한 디자인 적용 방법</li>
-                                    <li>생성형 AI 활용 브랜드 디자인</li>
-                                    <li>디자인 툴 Figma, Figma Make 소개 및 실습</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-day">Day 3</div>
-                            <div class="timeline-content">
-                                <h3>비즈니스의 이해, 프론트엔드와 실습</h3>
-                                <ul>
-                                    <li>비즈니스 모델 설계</li>
-                                    <li>수익화 전략</li>
-                                    <li>GitHub 기초 지식</li>
-                                    <li>프론트엔드 배포 방법</li>
-                                    <li>바이브 코딩 실습</li>
-                                    <li>서비스 기획 및 프로젝트 시작</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-day">Day 4</div>
-                            <div class="timeline-content">
-                                <h3>백엔드 이해와 배포</h3>
-                                <ul>
-                                    <li>백엔드 기술 선택 가이드</li>
-                                    <li>URL 설계와 DB 설계</li>
-                                    <li>백엔드 기초 지식 및 실행 방법</li>
-                                    <li>백엔드 바이브 코딩 전략</li>
-                                    <li>백엔드 배포 실습</li>
-                                    <li>프로젝트 개발 및 멘토링</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-day">Day 5</div>
-                            <div class="timeline-content">
-                                <h3>프로젝트 완성과 발표</h3>
-                                <ul>
-                                    <li>결과물 발표 - 위니브 상장</li>
-                                    <li>디자인 팁과 바이브 클론 코딩 팁</li>
-                                    <li>위니브 프롬프트</li>
-                                    <li>프롬프트 라이브러리 구축 전략</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Instructors Section -->
-        <section id="instructors" class="content-section">
-            <div class="container">
-                <h2 class="section-title">강사진 소개</h2>
-                <div class="instructor-grid">
-                    <div class="instructor-card">
-                        <img src="img/profile-1.png" alt="이호준 강사" class="instructor-photo">
-                        <h3>이호준 강사</h3>
-                        <p class="instructor-role">위니브 CEO</p>
-                        <p class="instructor-desc">30여 권의 IT 서적 집필, 다양한 무료 ICT 교육 플랫폼 런칭</p>
-                    </div>
-                    <div class="instructor-card">
-                        <img src="img/profile-2.png" alt="차경림 강사" class="instructor-photo">
-                        <h3>차경림 강사</h3>
-                        <p class="instructor-role">위니브 CDO</p>
-                        <p class="instructor-desc">UI/UX 디자인, 캐릭터 IP, 생성형 AI 활용 디자인</p>
-                    </div>
-                    <div class="instructor-card">
-                        <img src="img/profile-4.png" alt="한재현 강사" class="instructor-photo">
-                        <h3>한재현 강사</h3>
-                        <p class="instructor-role">위니브 CPO</p>
-                        <p class="instructor-desc">프론트엔드, 백엔드, 게임 개발까지 다방면 실무 경험</p>
-                    </div>
-                    <div class="instructor-card">
-                        <img src="img/profile-3.png" alt="김진환 멘토" class="instructor-photo">
-                        <h3>김진환 멘토</h3>
-                        <p class="instructor-role">위니브 데이터 리드 / 고려대 겸임교수</p>
-                        <p class="instructor-desc">데이터 분석 전문가, AI 활용 바이브 코딩 서비스 배포 경험</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- What's Included Section -->
-        <section id="included" class="content-section light-bg">
-            <div class="container">
-                <h2 class="section-title dark-text">제공 혜택</h2>
-                <div class="section-content">
-                    <div class="included-grid">
-                        <div class="included-item">
-                            <span class="included-icon">🏠</span>
-                            <span class="included-text">숙박 (4박)</span>
-                        </div>
-                        <div class="included-item">
-                            <span class="included-icon">🍱</span>
-                            <span class="included-text">점심 식사</span>
-                        </div>
-                        <div class="included-item">
-                            <span class="included-icon">📚</span>
-                            <span class="included-text">교육</span>
-                        </div>
-                        <div class="included-item">
-                            <span class="included-icon">👨‍🏫</span>
-                            <span class="included-text">멘토링</span>
-                        </div>
-                        <div class="included-item">
-                            <span class="included-icon">🤝</span>
-                            <span class="included-text">네트워킹</span>
-                        </div>
-                        <div class="included-item">
-                            <span class="included-icon">🎬</span>
-                            <span class="included-text">위니브 VOD 강의 5종 제공</span>
-                        </div>
-                    </div>
-                    <div class="not-included">
-                        <p><strong>별도 준비 사항</strong> 개인 노트북, 개인 용품, 항공권, 조식/석식</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="info" class="content-section pricing-section">
-            <div class="container">
-                <h2 class="section-title">비용 및 신청 안내</h2>
-                <div class="section-content">
-                    <div class="pricing-cards">
-                        <div class="pricing-card featured">
-                            <div class="pricing-badge">추천</div>
-                            <h3>숙박 참가</h3>
-                            <div class="pricing-amount">
-                                <span class="price">55만원</span>
-                                <span class="price-unit">/ 4박 5일</span>
-                            </div>
-                            <p class="price-detail">숙박 + 교육 + 점심 포함</p>
-                            <ul class="pricing-features">
-                                <li>✓ 2인 1실 숙박</li>
-                                <li>✓ 점심 식사 제공</li>
-                                <li>✓ 전체 교육 과정</li>
-                                <li>✓ 멘토링 & 네트워킹</li>
-                            </ul>
-                            <p class="pricing-capacity">정원: 20명</p>
-                        </div>
-                        <div class="pricing-card">
-                            <h3>비숙박 참가</h3>
-                            <div class="pricing-amount">
-                                <span class="price">35만원</span>
-                                <span class="price-unit">/ 5일</span>
-                            </div>
-                            <p class="price-detail">교육 + 점심 포함</p>
-                            <ul class="pricing-features">
-                                <li>✓ 점심 식사 제공</li>
-                                <li>✓ 전체 교육 과정</li>
-                                <li>✓ 멘토링 & 네트워킹</li>
-                                <li>○ 숙박 별도</li>
-                            </ul>
-                            <p class="pricing-capacity">정원: 5명</p>
-                        </div>
-                    </div>
-
-                    <div class="info-table-wrapper">
-                        <table class="info-table">
-                            <tbody>
-                                <tr>
-                                    <td class="info-label">일정</td>
-                                    <td class="info-value">2026년 1월 5일(월) ~ 1월 9일(금)</td>
-                                </tr>
-                                <tr>
-                                    <td class="info-label">장소</td>
-                                    <td class="info-value">오피스 제주 사계점 (제주 서귀포시 안덕면 향교로 214)</td>
-                                </tr>
-                                <tr>
-                                    <td class="info-label">모집 인원</td>
-                                    <td class="info-value">최대 25명 (숙박 20명, 비숙박 5명)</td>
-                                </tr>
-                                <tr>
-                                    <td class="info-label">신청 기간</td>
-                                    <td class="info-value">2025년 12월 24일(수) ~ 12월 30일(화) <strong>단 일주일!</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="info-label">마감 안내</td>
-                                    <td class="info-value">입금 기준 <strong>선착순 마감</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Apply Section -->
+        <!-- 10. Apply Section - 신청하기 -->
         <section id="apply" class="content-section apply-section">
             <div class="hero-background">
                 <img src="img/jeju-beach.jpg" alt="제주 해변" class="hero-bg-image">
@@ -623,10 +833,9 @@
                 <div class="section-content">
                     <p class="apply-description">
                         아래 버튼을 클릭하여 Google Form으로 신청해주세요.<br>
-                        신청 후 안내된 계좌로 입금하시면 등록이 완료됩니다.<br>
-                        신청은 <strong>12월 24일(수) 00:00</strong>부터 가능합니다.
+                        신청 후 안내된 계좌로 입금하시면 등록이 완료됩니다.
                     </p>
-                    <a href="#" class="cta-button apply-cta" id="apply-button">
+                    <a href="https://forms.gle/1VvtKpSGSCQScEzJ7" target="_blank" class="cta-button apply-cta" id="apply-button">
                         신청 폼 작성하기
                     </a>
                     <p class="apply-note">
@@ -636,8 +845,8 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="content-section light-bg">
+        <!-- 11. FAQ Section - 자주 묻는 질문 -->
+        <section id="faq" class="content-section">
             <div class="container">
                 <h2 class="section-title dark-text">자주 묻는 질문</h2>
                 <div class="section-content">
@@ -661,19 +870,26 @@
                         <div class="faq-item">
                             <h3>Q. 노트북은 어떤 것을 가져가야 하나요?</h3>
                             <p>개인 노트북을 지참해주세요. Windows, Mac 모두 가능하며, 기본적인 웹 브라우저와 코드 에디터 설치가 가능하면 됩니다. 여분에 노트북이 있긴 하나, 문제가 생긴 경우에만 빌려드릴 예정입니다.</p>
-                            <p>
-                                <strong>PC(개인 노트북) 최소 사양</strong><br>
-                                - 운영체제: Windows 10 이상 / macOS 10.14 Mojave 이상<br>
-                                - CPU: Intel i5 (6세대 이상) 또는 AMD Ryzen 5 이상<br>
-                                - RAM: 8GB 이상<br>
-                                - 저장공간: 여유 공간 10GB 이상 (Anaconda, 라이브러리 설치 등)<br>
-                                - 브라우저: Chrome 최신 버전<br>
-                                - 기타: Python 설치 및 실행 가능한 환경 (Anaconda 권장)
-                            </p>
+                            <div class="spec-box">
+                                <strong class="spec-title">PC(개인 노트북) 최소 사양</strong>
+                                <ul class="spec-list">
+                                    <li><span class="spec-label">운영체제</span>Windows 10 이상 / macOS 10.14 Mojave 이상</li>
+                                    <li><span class="spec-label">CPU</span>Intel i5 (6세대 이상) 또는 AMD Ryzen 5 이상</li>
+                                    <li><span class="spec-label">RAM</span>8GB 이상</li>
+                                    <li><span class="spec-label">저장공간</span>여유 공간 10GB 이상 (Anaconda, 라이브러리 설치 등)</li>
+                                    <li><span class="spec-label">브라우저</span>Chrome 최신 버전</li>
+                                    <li><span class="spec-label">기타</span>Python 설치 및 실행 가능한 환경 (Anaconda 권장)</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="faq-item">
                             <h3>Q. 환불 정책은 어떻게 되나요?</h3>
-                            <p>1월 2일(금) 18시까지 50% 환불이 가능합니다. 이후에는 환불이 어렵습니다.</p>
+                            <ul class="refund-list">
+                                <li>교육 시작 7일 전(12/28 일)까지 취소 시: 전액 환불</li>
+                                <li>교육 시작 3일 전(1/2 금)까지 취소 시: 결제 금액의 50% 환불</li>
+                                <li>교육 시작 2일 전(1/3 토)~당일 취소 및 무단 불참: 환불 불가</li>
+                                <li>환불 관련 문의: paul-lab@naver.com, 070-8656-2949(문자, 전화)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -711,7 +927,6 @@
     <div id="apply-modal" class="modal">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <div class="modal-icon">📅</div>
             <h3>신청 기간 안내</h3>
             <p>신청은 <strong>12월 24일(화) 00:00</strong>부터 가능합니다.</p>
             <p class="modal-sub">12월 24일 ~ 30일, 단 일주일간 신청 가능!</p>
